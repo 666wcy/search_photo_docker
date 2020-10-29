@@ -11,14 +11,13 @@ import json
 import os
 import telegraph
 from telegraph import Telegraph
-
 import sys
-print(sys.argv)
+
 telegraph = Telegraph()
 
 # Example of your code beginning
 #           Config vars
-token = str(sys.argv)
+token = str(sys.argv[1])
 
 session = requests.session()
 bot = telebot.TeleBot(token)
